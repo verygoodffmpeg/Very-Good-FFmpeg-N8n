@@ -23,8 +23,6 @@
 		"build": "n8n-node build",
 		"lint": "n8n-node lint",
 		"lint:fix": "n8n-node lint --fix",
-		"release": "n8n-node release",
-		"prepublishOnly": "n8n-node prerelease",
 		"sync-sdk": "node scripts/sync-sdk.mjs",
 		"test": "vitest run",
 		"test:ui": "playwright test"
@@ -50,7 +48,6 @@
 		"vitest": "4.0.18",
 		"eslint": "9.39.4",
 		"prettier": "3.8.3",
-		"release-it": "20.0.1",
 		"typescript": "5.9.3"
 	},
 	"peerDependencies": {

@@ -1,4 +1,3 @@
-/* eslint-disable -- dev-only file, excluded from the published package */
 /**
  * Vitest config for e2e tests against the real VGF API.
  */

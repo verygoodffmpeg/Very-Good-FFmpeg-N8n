@@ -15,7 +15,7 @@ export class Vgf implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Very Good FFmpeg',
 		name: 'vgf',
-		icon: 'file:vgf.svg',
+		icon: { light: 'file:vgf.svg', dark: 'file:vgf.dark.svg' },
 		group: ['transform'],
 		version: 1,
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',

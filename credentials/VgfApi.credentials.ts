@@ -11,7 +11,10 @@ export class VgfApi implements ICredentialType {
 
 	displayName = 'Very Good FFmpeg API';
 
-	icon: Icon = 'file:../nodes/Vgf/vgf.svg';
+	icon: Icon = {
+		light: 'file:../nodes/Vgf/vgf.svg',
+		dark: 'file:../nodes/Vgf/vgf.dark.svg',
+	};
 
 	documentationUrl = 'https://verygoodffmpeg.com/docs';
 

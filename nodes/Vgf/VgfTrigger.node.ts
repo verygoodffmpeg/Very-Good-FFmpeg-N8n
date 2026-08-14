@@ -1,5 +1,6 @@
 import type {
 	IDataObject,
+	IHookFunctions,
 	INodeType,
 	INodeTypeDescription,
 	IWebhookFunctions,
@@ -7,12 +8,15 @@ import type {
 } from 'n8n-workflow';
 import { NodeConnectionTypes } from 'n8n-workflow';
 
-// eslint-disable-next-line @n8n/community-nodes/webhook-lifecycle-complete -- VGF webhooks are configured per-job via the Run operation, not registered globally
+/**
+ * Webhook trigger that receives job completion callbacks from the VGF API.
+ */
+// eslint-disable-next-line @n8n/community-nodes/node-usable-as-tool -- trigger nodes must not be usable as tools; newer rule versions forbid the property here
 export class VgfTrigger implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Very Good FFmpeg Trigger',
 		name: 'vgfTrigger',
-		icon: 'file:vgf.svg',
+		icon: { light: 'file:vgf.svg', dark: 'file:vgf.dark.svg' },
 		group: ['trigger'],
 		version: 1,
 		subtitle: '=Webhook: {{$parameter["path"] || "vgf"}}',
@@ -20,7 +24,6 @@ export class VgfTrigger implements INodeType {
 		defaults: { name: 'Very Good FFmpeg Trigger' },
 		inputs: [],
 		outputs: [NodeConnectionTypes.Main],
-		usableAsTool: true,
 		webhooks: [
 			{
 				name: 'default',
@@ -38,6 +41,23 @@ export class VgfTrigger implements INodeType {
 				default: '',
 			},
 		],
+	};
+
+	// The VGF API has no server-side webhook registry: the callback URL is
+	// passed per-job in the Run operation, so there is nothing to register,
+	// verify, or remove on the service.
+	webhookMethods = {
+		default: {
+			async checkExists(this: IHookFunctions): Promise<boolean> {
+				return true;
+			},
+			async create(this: IHookFunctions): Promise<boolean> {
+				return true;
+			},
+			async delete(this: IHookFunctions): Promise<boolean> {
+				return true;
+			},
+		},
 	};
 
 	async webhook(this: IWebhookFunctions): Promise<IWebhookResponseData> {

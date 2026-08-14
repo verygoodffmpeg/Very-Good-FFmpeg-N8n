@@ -1,5 +1,5 @@
 {
-	"name": "n8n-nodes-verygoodffmpeg",
+	"name": "@verygoodffmpeg/n8n-nodes-verygoodffmpeg",
 	"version": "0.1.0",
 	"description": "n8n community node for the Very Good FFmpeg transcoding API",
 	"license": "MIT",

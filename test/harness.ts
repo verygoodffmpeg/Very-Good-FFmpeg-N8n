@@ -51,7 +51,7 @@ export function makeExecuteContext(options: {
 		getNode: () => ({
 			id: 'test-node',
 			name: 'Very Good FFmpeg',
-			type: 'n8n-nodes-verygoodffmpeg.vgf',
+			type: '@verygoodffmpeg/n8n-nodes-verygoodffmpeg.vgf',
 			typeVersion: 1,
 			position: [0, 0],
 			parameters: {},

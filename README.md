@@ -1,4 +1,4 @@
-# n8n-nodes-verygoodffmpeg
+# @verygoodffmpeg/n8n-nodes-verygoodffmpeg
 
 Run [FFmpeg](https://ffmpeg.org) jobs in the cloud from your [n8n](https://n8n.io) workflows, powered by the [Very Good FFmpeg](https://verygoodffmpeg.com) API. Transcode, trim, resize, and convert video/audio without hosting FFmpeg yourself — on CPU or NVIDIA GPU machines.
 
@@ -6,7 +6,7 @@ Run [FFmpeg](https://ffmpeg.org) jobs in the cloud from your [n8n](https://n8n.i
 
 **n8n Cloud / verified:** search for "Very Good FFmpeg" in the nodes panel and install from there.
 
-**Self-hosted:** **Settings → Community Nodes → Install** and enter `n8n-nodes-verygoodffmpeg`.
+**Self-hosted:** **Settings → Community Nodes → Install** and enter `@verygoodffmpeg/n8n-nodes-verygoodffmpeg`.
 
 ## Credentials
 

@@ -13,8 +13,8 @@ services:
       - N8N_RUNNERS_ENABLED=true
     volumes:
       - n8n_data:/home/node/.n8n
-      - ./package.json:/home/node/.n8n/custom/node_modules/n8n-nodes-verygoodffmpeg/package.json:ro
-      - ./dist:/home/node/.n8n/custom/node_modules/n8n-nodes-verygoodffmpeg/dist:ro
+      - ./package.json:/home/node/.n8n/custom/node_modules/@verygoodffmpeg/n8n-nodes-verygoodffmpeg/package.json:ro
+      - ./dist:/home/node/.n8n/custom/node_modules/@verygoodffmpeg/n8n-nodes-verygoodffmpeg/dist:ro
 
 volumes:
   n8n_data:

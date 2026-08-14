@@ -1,5 +1,5 @@
 {
-	"node": "n8n-nodes-verygoodffmpeg.vgf",
+	"node": "@verygoodffmpeg/n8n-nodes-verygoodffmpeg.vgf",
 	"nodeVersion": "1.0",
 	"codexVersion": "1.0",
 	"categories": ["Utility"],

@@ -1,5 +1,5 @@
 {
-	"node": "n8n-nodes-verygoodffmpeg.vgfTrigger",
+	"node": "@verygoodffmpeg/n8n-nodes-verygoodffmpeg.vgfTrigger",
 	"nodeVersion": "1.0",
 	"codexVersion": "1.0",
 	"categories": ["Utility"],

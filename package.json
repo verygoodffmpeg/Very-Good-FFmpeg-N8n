@@ -1,0 +1,59 @@
+{
+	"name": "n8n-nodes-verygoodffmpeg",
+	"version": "0.1.0",
+	"description": "n8n community node for the Very Good FFmpeg transcoding API",
+	"license": "MIT",
+	"homepage": "https://github.com/verygoodffmpeg/Very-Good-FFmpeg-N8n#readme",
+	"keywords": [
+		"n8n-community-node-package",
+		"n8n",
+		"ffmpeg",
+		"verygoodffmpeg",
+		"transcoding",
+		"video"
+	],
+	"author": {
+		"name": "Very Good FFmpeg"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/verygoodffmpeg/Very-Good-FFmpeg-N8n.git"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease",
+		"sync-sdk": "node scripts/sync-sdk.mjs",
+		"test": "vitest run",
+		"test:ui": "playwright test"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/VgfApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/Vgf/Vgf.node.js",
+			"dist/nodes/Vgf/VgfTrigger.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "*",
+		"@playwright/test": "1.58.2",
+		"dotenv": "17.2.4",
+		"vitest": "4.0.18",
+		"eslint": "9.39.4",
+		"prettier": "3.8.3",
+		"release-it": "20.0.1",
+		"typescript": "5.9.3"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}

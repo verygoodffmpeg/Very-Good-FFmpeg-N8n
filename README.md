@@ -62,7 +62,7 @@ API failures surface as standard n8n node errors with the HTTP status and the AP
 
 ## Development
 
-Contributions welcome — see [DEVELOPMENT.md](https://github.com/verygoodffmpeg/Very-Good-FFmpeg-N8n/blob/main/DEVELOPMENT.md) for local setup and the test suites.
+Contributions welcome — see [DEVELOPMENT.md](https://github.com/verygoodffmpeg/Very-Good-FFmpeg-N8n/blob/master/DEVELOPMENT.md) for local setup and the test suites.
 
 ## License
 

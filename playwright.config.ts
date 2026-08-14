@@ -1,3 +1,4 @@
+/* eslint-disable -- dev-only file, excluded from the published package */
 /**
  * Playwright config for the n8n UI end-to-end check.
  */

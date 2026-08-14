@@ -1,6 +1,6 @@
 {
 	"name": "@verygoodffmpeg/n8n-nodes-verygoodffmpeg",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"packageManager": "pnpm@11.0.7",
 	"description": "n8n community node for the Very Good FFmpeg transcoding API",
 	"license": "MIT",
@@ -14,7 +14,8 @@
 		"video"
 	],
 	"author": {
-		"name": "Very Good FFmpeg"
+		"name": "Very Good FFmpeg",
+		"email": "support@verygoodffmpeg.com"
 	},
 	"repository": {
 		"type": "git",

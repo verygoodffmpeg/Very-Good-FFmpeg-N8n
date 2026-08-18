@@ -10,6 +10,7 @@ export default defineConfig({
 	workers: 1,
 	expect: { timeout: 20_000 },
 	use: {
+		testIdAttribute: 'data-test-id',
 		baseURL: 'http://localhost:5678',
 		actionTimeout: 20_000,
 		trace: 'retain-on-failure',
